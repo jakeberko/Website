@@ -1,75 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jacob Berkowitz — Software Engineer</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Berkowitz — Software Engineer</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-  <header>
-    <nav>
-      <div class="logo">Portfolio of Jacob Berkowitz</div>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <div class="logo">Portfolio of Jacob Berkowitz</div>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section id="hero">
-      <h1>Jacob Berkowitz</h1>
-      <p>One-line pitch — what you build and for whom.</p>
-    </section>
+    <main>
+        <section id="hero">
+            <h1>Jacob Berkowitz</h1>
+            <p>Backend Software Engineer who enjoys leaving complex systems more reliable than I found them.</p>
+        </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
+        <section id="projects">
+            <h2>Projects</h2>
+            
+            <article class="project-card">
+                <h3>Project Name</h3>
+                <p>What problem it solved and your specific contribution.</p>
+                <a href="#">Live Demo</a>
+                <a href="#">Source Code</a>
+            </article>
 
-      <article class="project-card">
-        <h3>Project Name</h3>
-        <p>What problem it solved and your specific contribution.</p>
-        <a href="#">Live Demo</a>
-        <a href="#">Source Code</a>
-      </article>
+            <h2>AWS Projects</h2>
 
-      <!-- copy the <article> block above for each project -->
+            <article class="project-card">
+                <h3>Apple Notation Code-Signing Platform</h3>
+                <p>Rebuilt a deprecated, undocumented signing platform serving 2,000+ users that had a failed deployment
+                    process, enabling an on-time public release. Reduced future engineering effort from 6 weeks to 1
+                    week by implementing unit testing, error handling, and comprehensive documentation.</p>
+            </article>
 
-    </section>
+            <article class="project-card">
+                <h3>PKI Infrastructure & GovCloud Compliance</h3>
+                <p>Engineered a 3-tier PKI infrastructure across 3 AWS partitions with automated subordinate certificate
+                    rotation through serverless architecture, ensuring ITAR compliance for secure GovCloud signing
+                    operations.</p>
+            </article>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>A few sentences on your background.</p>
-    </section>
+            <article class="project-card">
+                <h3>CI/CD Pipeline Infrastructure</h3>
+                <p>Built 7+ CI/CD pipelines supporting deployments across 20+ AWS regions, reducing deployment time by
+                    33% through infrastructure-as-code, automated rollback mechanisms, and standardized release
+                    workflows.</p>
+            </article>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>TypeScript</li>
-        <li>Add your own here</li>
-      </ul>
-    </section>
+            <article class="project-card">
+                <h3>Backend Signing Performance Optimization</h3>
+                <p>Scaled backend signing throughput from 800 to 2,000 TPS by optimizing resource utilization, expanding
+                    certificate validation across 20+ certificates, and strengthening monitoring for 12+ PKIs.</p>
+            </article>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <a href="mailto:you@example.com">Email</a>
-      <a href="https://github.com/you">GitHub</a>
-      <a href="https://linkedin.com/in/you">LinkedIn</a>
-    </section>
-  </main>
+            <h2>AWS Internship Projects</h2>
 
-  <footer>
-    <p>&copy; 2026 Jacob Berkowitz</p>
-  </footer>
+            <article class="project-card">
+                <h3>AWS Signer Operations Plane</h3>
+                <p>Architected 30+ operational tools within AWS Signer's Operations Plane from concept to production,
+                    streamlining on-call workflows through a unified Python and TypeScript platform deployed across 20
+                    regions.</p>
+            </article>
 
-  <script src="js/script.js"></script>
+            <article class="project-card">
+                <h3>EC2 to ECS Fargate Migration</h3>
+                <p>Adapted an internal operations framework from EC2 to ECS with AWS Fargate across 20 regions,
+                    improving scalability while eliminating OS patching and maintenance overhead. Refactored framework
+                    components into a standalone package with optimized Docker container images.</p>
+            </article>
+
+            <article class="project-card">
+                <h3>DynamoDB Data Migration Pipelines</h3>
+                <p>Built 100-GB data migration pipelines enabling reliable cross-region and cross-account DynamoDB
+                    replication using AWS CDK. Developed a parallel scanning mechanism in Java with high-throughput
+                    scans and batch writes for efficient database replication.</p>
+            </article>
+
+            <!-- copy the <article> block above for each project -->
+
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>I enjoy solving backend engineering problems that require understanding how systems work, why they fail,
+                and how they can be improved. There's something rewarding about taking a complex system and leaving it
+                more reliable than I found it.<br><br>
+
+                That curiosity led me to Amazon Web Services (AWS), where I completed two software engineering
+                internships before joining full-time as a Software Development Engineer. I worked on secure cloud
+                platforms, modernized production code-signing workflows serving 2,000+ users, improved backend
+                performance, and built tooling that helped engineers deploy and manage software more
+                efficiently.<br><br>
+
+                What I enjoy most isn't just writing code, it's solving difficult engineering problems. Whether
+                improving software quality, modernizing legacy systems, or building scalable backend services, I enjoy
+                creating solutions that make systems more reliable and easier for other engineers to work with.<br><br>
+
+                I'm excited to continue growing as a Backend Software Engineer, contribute to product-focused teams, and
+                keep learning from engineers who enjoy solving challenging technical problems together. Long term, I'd
+                like to expand into full-stack development while continuing to build software that creates meaningful
+                impact.<br><br>
+
+                Core Skills: Backend Software Engineering • Distributed Systems • Software Architecture • AWS • Python •
+                Java • TypeScript • Cloud Infrastructure • Secure Software Development • CI/CD • System Design<br><br>
+
+                In the winter, you can find me on a snowboard, and in the summer, you can find me on a longboard. If I'm
+                on neither, chances are I fell.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <h3>Languages</h3>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>TypeScript</li>
+                <li>C++</li>
+                <li>Ruby</li>
+                <li>SQL</li>
+            </ul>
+            <br>
+            <h3>Cloud & DevOps</h3>
+            <ul>
+                <li>AWS</li>
+                <li>AWS CDK</li>
+                <li>CloudFormation</li>
+                <li>Lambda</li>
+                <li>EC2</li>
+                <li>S3</li>
+                <li>DynamoDB</li>
+                <li>Docker</li>
+                <li>Git</li>
+                <li>CI/CD</li>
+            </ul>
+            <br>
+            <h3>Security</h3>
+            <ul>
+                <li>Public Key Infrastructure (PKI)</li>
+                <li>Code Signing</li>
+                <li>Cloud Security</li>
+                <li>Secure Software Development</li>
+                <li>Restricted/Classified Environments</li>
+            </ul>
+            <br>
+            <h3>Software Engineering</h3>
+            <ul>
+                <li>Object-Oriented Programming (OOP)</li>
+                <li>Software Architecture</li>
+                <li>System Design</li>
+                <li>Distributed Systems</li>
+                <li>Backend Development</li>
+                <li>Scalability</li>
+                <li>Performance Optimization</li>
+                <li>Infrastructure as Code (IaC)</li>
+            </ul>
+            <br>
+            <h3>Testing & Practices</h3>
+            <ul>
+                <li>Unit/Integration Testing</li>
+                <li>Agile Development</li>
+                <li>Code Reviews</li>
+                <li>Design Reviews</li>
+                <li>Technical Documentation</li>
+                <li>Software Refactoring</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <a href="mailto:jacobcberkowitz@gmail.com">Email</a>
+            <a href="https://github.com/jakeberko">GitHub</a>
+            <a href="https://linkedin.com/in/jcberko">LinkedIn</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jacob Berkowitz</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
