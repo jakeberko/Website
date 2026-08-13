@@ -19,6 +19,7 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -155,11 +156,42 @@ footer {
 }
 
 /* ---- Mobile ---- */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.nav-toggle span {
+  width: 24px;
+  height: 2px;
+  background: var(--color-text);
+}
+
+.nav-links a.active {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
 @media (max-width: 640px) {
-  nav {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
     flex-direction: column;
+    width: 100%;
     gap: 1rem;
-    padding: 1rem;
+    padding-top: 1rem;
+  }
+
+  .nav-links.open {
+    display: flex;
   }
 
   #hero h1 {
