@@ -45,6 +45,7 @@ nav {
   margin: 0 auto;
   padding: 1rem var(--spacing);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
